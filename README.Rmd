@@ -9,6 +9,29 @@ output: github_document
 knitr::opts_chunk$set(echo = TRUE)
 ```
 
+# Load necessary libraries
+```{r, message = FALSE}
+# Load necessary libraries
+# install.packages("classdata")
+library(classdata)
+library(ggplot2)
+
+# Load the residential sales data
+data(ames)
+
+# Display the structure of the dataset
+str(ames)
+
+# Display the first few rows of the dataset
+head(ames)
+
+# Summary statistics of numerical variables
+summary(ames)
+```
+
+
+
+
 # Lab report #1
 
 Follow the instructions posted at https://ds202-at-isu.github.io/labs.html for the lab assignment. The work is meant to be finished during the lab time, but you have time until Monday evening to polish things.
