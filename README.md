@@ -99,6 +99,9 @@ summary(ames)
     ##                     (19) Res: North Ridge Hei: 420  
     ##                     (Other)                  :3622
 
+3.  The main variable we are focusing on is the Sale Price. The minimum
+    sale price is \$0 while the most is \$20500000
+
 # Lab report \#1
 
 Follow the instructions posted at
