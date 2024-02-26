@@ -31,10 +31,18 @@ summary(ames)
 
 
 
-3. The main variable we are focusing on is the Sale Price. The minimum sale price is $0 while the most is $20500000
+3. The main variable we are focusing on is the Sale Price. The minimum sale price is $0 while the most is $20500000. Most of sales seems like it was under 200k and the upper quartile was $280,000. There are small number of houses sold at very high prices which skews the mean by a lot. 
 ![Sale Price](images/SalePriceHistogrm.png)
 
 
+4.
+
+The variable I picked is the Total Living Area. The range of the data is from 0 to 6007. It seems like most of the living area is between 800 to 2000 square feet. 
+![Total Living Area](images/LivingAreaHistogram.png)
+
+
+It seems like there is a linear relationship between living area and the sale price but without the R^2 value I'm not sure how strongly it is correlated. As the sale price increased the Total Living Area generally increased as well. Many of the houses had 0 living space or sold at $0 which was messing with the scatter plot. I removed the values that had houses sold at $0 or had 0 total living space. In addition, I removed the houses that was sold at a price higher than 1000000 to make the scatterplot look nicer and more readable. The scatterplot below is after removing all those values.
+![Total Living Area](images/LivingAreaScatterPlot.png)
 
 
 # Lab report #1
