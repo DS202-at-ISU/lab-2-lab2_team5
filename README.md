@@ -122,6 +122,48 @@ scatterplot look nicer and more readable. The scatterplot below is after
 removing all those values. ![Total Living
 Area](images/LivingAreaScatterPlot.png)
 
+######################################## 
+
+Subham Bhattacharya
+
+My variable is bedroom
+
+``` r
+#Histogram for Bedrooms
+ggplot(ames, aes(x = Bedrooms)) +
+  geom_histogram(fill = "skyblue", color = "black", bins = 20) +
+  labs(title = "Distribution of Bedrooms",
+       x = "Number of Bedrooms",
+       y = "Frequency") +
+  theme_minimal()
+```
+
+    ## Warning: Removed 447 rows containing non-finite values (`stat_bin()`).
+
+![](README_files/figure-gfm/plot-1.png)<!-- -->
+
+The above shows a distribution of bedrooms from here we can assume that
+there are listing with the most of either 3 or 4 bedrooms
+
+``` r
+# Scatterplot for Bedrooms vs Sale Price
+ggplot(ames, aes(x = Bedrooms, y = `Sale Price`)) +
+  geom_point(alpha = 0.6) +
+  labs(title = "Bedrooms vs Sale Price",
+       x = "Number of Bedrooms",
+       y = "Sale Price") +
+  theme_minimal() + 
+  ylim(0, 5000000) 
+```
+
+    ## Warning: Removed 779 rows containing missing values (`geom_point()`).
+
+![](README_files/figure-gfm/bedrooms_vs_sale_price-1.png)<!-- --> From
+the graph we can assume that there is a linear relation until 4 bedrooms
+where from 0 to 4 as the number of bedrooms increase so does the price
+of the house but from their onwards it seems to even out where the price
+stays almost constant with little increases and decreases.
+
 # Lab report \#1
 
 Follow the instructions posted at
